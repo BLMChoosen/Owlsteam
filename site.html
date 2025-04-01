@@ -6,24 +6,6 @@
         <script src="https://cdn.tailwindcss.com">
         </script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-        
-        <script>
-            
-            let emojis = [
-                "😊",
-                "😂",
-                "😍",
-                "😘",
-                "👍",
-                "😎",
-            ];
-            let urlAnimate = () => {
-                window.location.hash =
-                    emojis[Math.floor((Date.now() / 100) % emojis.length)];
-                setTimeout(urlAnimate, 270);
-            };
-            urlAnimate();
-        </script>
 
 
         <style>
