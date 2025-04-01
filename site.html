@@ -1,73 +1,48 @@
 <!DOCTYPE html>
-<html style="background: linear-gradient(to top, #07111B, #1C3240);">
-    <head>
-        <meta charset="UTF-8" />
-        <title>OwlSteam</title>
-        <script src="https://cdn.tailwindcss.com">
-        </script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>OwlSteam</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/base/site.css">
+    <link rel="stylesheet" href="css/components/header.css">
+</head>
+<body class="bg-gradient-to-t from-[#07111B] to-[#1C3240] text-[#E4F0F2] min-h-screen">
+    <!-- Header -->
+    <header class="header-custom">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="assets/images/img.png" alt="Logo OwlSteam" class="logo">
+            <nav class="nav-links">
+                <a href="#" class="nav-link">LOJA</a>
+                <a href="#" class="nav-link">BIBLIOTECA</a>
+                <a href="#" class="nav-link">CONTA</a>
+            </nav>
+        </div>
+    </header>
 
-
-        <style>
-            body {
-            min-height: 100vh; /* Garante que ocupa toda a tela */
-            background: linear-gradient(to top, #07111B, #1C3240);
-            color : #E4F0F2;
-            }
-            h1 {
-                text-align: center;
-                font-family: Arial, sans-serif;
-                color: #D9043D;
-                text-shadow: 3px 3px 0.1px #000000;
-                font-size: 80px;
-            }
-            img {
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-                align-items: left;
-            }
-            .bg-linear {
-                background: linear-gradient(90deg, #D9043D 0%, #730724  100%);
-            }
-            .header-custom {
-                max-height: 120px;
-                margin: 0 auto;
-                }
-
-        </style>
-    </head>
-    <body>
-
-        
-        <header class="bg-linear p-4 flex justify-between items-center header-custom">
-            <div class="flex items-center justify-between w-full max-w-[800px] mx-auto">
-                <!-- Logo -->
-                <img alt="Logo" src="img.png"/>
-            
-                <!-- Itens centralizados com espaçamento igual -->
-                <div class="flex justify-center space-x-16">
-                    <span class="text-xl font-bold">LOJA</span>
-                    <a class="text-xl font-bold" href="#">BIBLIOTECA</a>
-                    <a class="text-xl font-bold" href="#">CONTA</a>
-                </div>
-            </div>
-            
-            
-           </header>
-
-        <link rel="stylesheet" href="style/base/site.css">
-        <p>O OwlSteam é uma loja virtual de jogos que beira trazer</p>
-
-
-
-
-        <ul>
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto p-4">
+        <h1 class="main-title">OwlSteam</h1>
+        <p>O OwlSteam é uma loja virtual de jogos que beira trazer:</p>
+        <ul class="features-list">
             <li>Diversos jogos de diferentes estilos</li>
             <li>Preços acessíveis</li>
             <li>Facilidade de compra</li>
         </ul>
-        <p>Além disso, o OwlSteam oferece uma experiência de compra segura e confiável, com suporte ao cliente 24/7.<br> Nossa equipe está sempre pronta para ajudar e garantir que você tenha a melhor experiência possível ao adquirir seus jogos favoritos.<br> Não perca tempo, visite o OwlSteam hoje mesmo e descubra um mundo de diversão e entretenimento!</p>
-        <p>Para mais informações nos contate em <a href="https://saberonline.my.canva.site/steam" style="color: aliceblue;"> Nosso Site</a></p>
-    </body>
+        <p class="description">
+            Além disso, o OwlSteam oferece uma experiência de compra segura e confiável, com suporte ao cliente 24/7.<br>
+            Nossa equipe está sempre pronta para ajudar e garantir que você tenha a melhor experiência possível.
+        </p>
+        <p>
+            Para mais informações nos contate em <a href="https://saberonline.my.canva.site/steam" class="link-externo">Nosso Site</a>
+        </p>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
 </html>

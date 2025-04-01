@@ -1,0 +1,23 @@
+.header-custom {
+    background: linear-gradient(90deg, #D9043D 0%, #730724 100%);
+    padding: 1rem;
+    max-height: 120px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 4rem; /* Equivalente ao space-x-16 do Tailwind */
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 1.25rem; /* 20px */
+    color: white;
+    text-decoration: none;
+}

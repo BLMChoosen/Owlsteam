@@ -1,0 +1,34 @@
+/* Variáveis CSS (opcional) */
+:root {
+    --color-primary: #D9043D;
+    --color-dark: #07111B;
+    --color-light: #E4F0F2;
+}
+
+/* Estilos base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.main-title {
+    text-align: center;
+    color: var(--color-primary);
+    text-shadow: 3px 3px 0.1px #000000;
+    font-size: 5rem; /* 80px */
+    margin-bottom: 2rem;
+}
+
+.link-externo {
+    color: var(--color-light);
+    text-decoration: underline;
+}
+
+.features-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.description {
+    margin: 1rem 0;
+}
