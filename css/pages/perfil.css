@@ -2,8 +2,8 @@
 .profile-card {
     text-align: center;
     padding: 20px;
-    background: var(--color-dark);
-    color: var(--color-light);
+    background: var(--color-light);
+    color: var(--color-dark);
     border-radius: 10px;
     max-width: 400px;
     margin: auto;

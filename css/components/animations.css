@@ -52,8 +52,11 @@
 }
 
 .game-image {
-    width: 300px;
+    height: 300px;
+    width: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .game-info {
@@ -66,7 +69,7 @@
 }
 
 .game-price {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #4CAF50;
     display: block;

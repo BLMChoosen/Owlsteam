@@ -9,6 +9,10 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    color:#E4F0F2; 
+    background: linear-gradient(135deg, #07111B 0%, Black 100%);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .main-title {
@@ -20,7 +24,7 @@ body {
 }
 
 .link-externo {
-    color: var(--color-light);
+    color: var(--dark-light);
     text-decoration: underline;
 }
 
@@ -34,13 +38,14 @@ body {
 }
 /* Modo Claro */
 .light-mode {
-    background: #F5F5F5;
+    background: linear-gradient(9deg, #E4F0F2 100%,#d9eff3 0%);
+    ;
     color: black;
 }
 
 .light-mode .profile-card {
-    background: white;
-    color: black;
+    background: #07111B;
+    color: white;
 }
 
 .light-mode .btn-dark-mode {

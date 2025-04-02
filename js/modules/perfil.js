@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
         email: "gabriel@owlsteam.com",
         avatar: "assets/images/user-avatar.png",
         purchasedGames: [
-            { title: "Cyber Ninja", image: "assets/images/cyber-ninja.jpg" },
-            { title: "Hacker Quest", image: "assets/images/hacker-quest.jpg" }
+            { title: "Cyber Ninja", image: "../assets/images/cyber-ninja.jpg" },
+            { title: "Hacker Quest", image: "../assets/images/hacker-quest.jpg" }
         ],
         wishlist: [
-            { title: "Future Race", image: "assets/images/future-race.jpg" },
-            { title: "Stealth Agent", image: "assets/images/stealth-agent.jpg" }
+            { title: "Future Race", image: "../assets/images/future-race.jpg" },
+            { title: "Stealth Agent", image: "../assets/images/stealth-agent.jpg" }
         ]
     };
 

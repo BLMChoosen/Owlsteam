@@ -46,6 +46,18 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.nav-link-active {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #E4F0F2;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* Menu Responsivo */
 @media (max-width: 768px) {
     .nav-links {
