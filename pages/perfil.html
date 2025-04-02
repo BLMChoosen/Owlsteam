@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwlSteam - Perfil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/base/site.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/pages/perfil.css">
+</head>
+<body class="dark-mode">
+    <!-- Header -->
+    <header class="header-custom">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="assets/images/logo.png" alt="Logo OwlSteam" class="logo">
+            <nav class="nav-links">
+                <a href="../index.html" class="nav-link">INÍCIO</a>
+                <a href="lancamento.html" class="nav-link">LANÇAMENTOS</a>
+                <a href="perfil.html" class="nav-link active">PERFIL</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Perfil -->
+    <main class="container mx-auto p-4">
+        <div class="profile-card">
+            <img src="../assets/images/user-avatar.png" alt="Avatar" class="profile-avatar">
+            <h1 id="user-name">Usuário</h1>
+            <p id="user-email">email@exemplo.com</p>
+            <button id="edit-profile" class="btn-edit">Editar Perfil</button>
+            <button id="toggle-dark-mode" class="btn-dark-mode">Modo Escuro</button>
+        </div>
+
+        <!-- Jogos Comprados -->
+        <section class="game-list">
+            <h2>Jogos Comprados</h2>
+            <div id="purchased-games" class="games-container"></div>
+        </section>
+
+        <!-- Wishlist -->
+        <section class="game-list">
+            <h2>Wishlist</h2>
+            <div id="wishlist-games" class="games-container"></div>
+        </section>
+    </main>
+
+    <script src="../js/modules/perfil.js" defer></script>
+</body>
+</html>

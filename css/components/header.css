@@ -1,23 +1,84 @@
+/* Estilo do Header */
 .header-custom {
     background: linear-gradient(90deg, #D9043D 0%, #730724 100%);
-    padding: 1rem;
+    padding: 1rem 2rem;
     max-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
+/* Logo */
 .logo {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    transition: transform 0.3s ease;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Menu de navegação */
 .nav-links {
     display: flex;
-    gap: 4rem; /* Equivalente ao space-x-16 do Tailwind */
+    gap: 2rem;
+    list-style-type: none;
 }
 
 .nav-link {
+    font-size: 1.1rem;
     font-weight: bold;
-    font-size: 1.25rem; /* 20px */
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: #E4F0F2;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Menu Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Animações no hover */
+.nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #E4F0F2;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Sombras e Transições */
+.header-custom:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwlSteam - Suporte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/base/site.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/pages/suporte.css">
+</head>
+<body class="bg-gradient-to-t from-[#07111B] to-[#1C3240] text-[#E4F0F2] min-h-screen">
+    <!-- Header -->
+    <header class="header-custom">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="assets/images/logo.png" alt="Logo OwlSteam" class="logo">
+            <nav class="nav-links">
+                <a href="../index.html" class="nav-link">INÍCIO</a>
+                <a href="biblioteca.html" class="nav-link">BIBLIOTECA</a>
+                <a href="perfil.html" class="nav-link">PERFIL</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto p-6">
+        <h1 class="main-title">Suporte</h1>
+        <p>Estamos aqui para te ajudar! Se você tem dúvidas ou problemas, entre em contato conosco ou veja as perguntas frequentes abaixo.</p>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">Como comprar um jogo?</h3>
+                <p class="faq-answer">Basta acessar a loja, escolher o jogo desejado e clicar no botão "Comprar". Depois, siga os passos para finalizar a compra.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Como recuperar minha senha?</h3>
+                <p class="faq-answer">Clique em "Esqueci minha senha" na tela de login e siga as instruções para redefinir sua senha.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Posso devolver um jogo?</h3>
+                <p class="faq-answer">Sim! Oferecemos um reembolso dentro de 14 dias após a compra, se o jogo não for jogado por mais de 2 horas.</p>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="contact-form-section">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form" action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/modules/suporte.js" defer></script>
+</body>
+</html>

@@ -32,3 +32,18 @@ body {
 .description {
     margin: 1rem 0;
 }
+/* Modo Claro */
+.light-mode {
+    background: #F5F5F5;
+    color: black;
+}
+
+.light-mode .profile-card {
+    background: white;
+    color: black;
+}
+
+.light-mode .btn-dark-mode {
+    background: var(--color-dark);
+    color: white;
+}

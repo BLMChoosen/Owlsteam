@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwlSteam - Lançamentos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/base/site.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/pages/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-custom">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="assets/images/logo.png" alt="Logo OwlSteam" class="logo">
+            <nav class="nav-links">
+                <a href="../index.html" class="nav-link">INÍCIO</a>
+                <a href="perfil.html" class="nav-link">PERFIL</a>
+                <a href="suporte.html" class="nav-link">SUPORTE</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main class="container mx-auto p-4">
+        <h1 class="main-title">Próximos Lançamentos</h1>
+        <p>Fique de olho nos próximos jogos que chegarão na OwlSteam!</p>
+
+        <!-- Contador Regressivo -->
+        <div class="countdown-container">
+            <h2>Cyber Ninja - Lançamento em:</h2>
+            <div id="countdown" class="countdown"></div>
+            <a href="jogo-detalhe.html?game=cyber-ninja" class="btn-detalhes">Ver Jogo</a>
+        </div>
+    </main>
+
+    <script src="../js/modules/countdown.js" defer></script>
+</body>
+</html>

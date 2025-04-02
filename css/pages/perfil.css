@@ -1,0 +1,55 @@
+/* Estilizando o Cartão de Perfil */
+.profile-card {
+    text-align: center;
+    padding: 20px;
+    background: var(--color-dark);
+    color: var(--color-light);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.profile-avatar {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.btn-edit, .btn-dark-mode {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: var(--color-primary);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dark-mode {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.btn-edit:hover {
+    background: #B00332;
+}
+
+.games-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.game-item {
+    width: 150px;
+    text-align: center;
+}
+
+.game-item img {
+    width: 100%;
+    border-radius: 5px;
+}

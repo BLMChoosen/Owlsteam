@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwlSteam - Biblioteca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/base/site.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/pages/biblioteca.css">
+</head>
+<body class="dark-mode">
+    <!-- Header -->
+    <header class="header-custom">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="../assets/images/logo.png" alt="Logo OwlSteam" class="logo">
+            <nav class="nav-links">
+                <a href="../index.html" class="nav-link">INÍCIO</a>
+                <a href="lancamento.html" class="nav-link">LANÇAMENTOS</a>
+                <a href="perfil.html" class="nav-link">PERFIL</a>
+                <a href="biblioteca.html" class="nav-link active">BIBLIOTECA</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Biblioteca -->
+    <main class="container mx-auto p-4">
+        <h1 class="main-title">Minha Biblioteca</h1>
+
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="search-bar" placeholder="Buscar jogo..." class="search-bar">
+
+        <!-- Filtros -->
+        <div class="filter-container">
+            <button class="filter-btn" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="playing">Jogando</button>
+            <button class="filter-btn" data-filter="installed">Instalado</button>
+            <button class="filter-btn" data-filter="completed">Finalizado</button>
+        </div>
+
+        <!-- Lista de Jogos -->
+        <section id="game-list" class="game-list"></section>
+    </main>
+
+    <script src="../js/modules/biblioteca.js" defer></script>
+</body>
+</html>
