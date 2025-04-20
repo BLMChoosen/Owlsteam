@@ -9,12 +9,48 @@
     to { transform: translateY(0); opacity: 1; }
 }
 
+@keyframes appear {
+    from { opacity: 0;
+        scale: 0.4;
+     }
+    to { opacity: 1;
+        scale: 1;
+     }
+}
+
+.animascroll{
+    animation: appear 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 /* Aplicando as animações */
 .main-title {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.carousel-item {
+.principal-title{
+    font-size: 10rem;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 100%);
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.sub-text {
+    font-size: 2rem;
+    color: var(--color-light);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.espaçamento{
+    margin-bottom: 20rem;
+}
+
+.enterpage {
+    animation: fadeIn 1.5s ease-in-out;
     animation: slideIn 1s ease-in-out;
 }
 .countdown-container {
@@ -53,6 +89,14 @@
 
 .game-image {
     height: 300px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stand-image {
+    height: 150px;
     width: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -112,13 +156,15 @@
 }
 
 .btn-detalhes {
-    display: block;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
     margin-top: 10px;
     color: var(--color-light);
     background-color: var(--color-dark);
     padding: 8px 12px;
     border-radius: 5px;
-    text-decoration: none;
     transition: background 0.3s;
 }
 
