@@ -7,7 +7,7 @@ table {
     box-shadow: 0 2px 12px rgba(0,0,0,0.07);
     border-radius: 12px;
     overflow: hidden;
-    margin: 24px 0;z
+    margin: 24px 0;
     animation: fadeIn 1.2s;
     background: linear-gradient(90deg, #001127 0%, #000000 100%); /* nova cor de fundo da tabela */
 }

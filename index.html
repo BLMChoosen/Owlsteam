@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/base/site.css">
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/animations.css">
+    <link rel="stylesheet" href="css/components/table.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/modules/games.js" defer></script>
+    <script src="js/components/table.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -31,55 +35,77 @@
         <!-- Carrossel de Destaques -->
         <div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo1.jpg" alt="Jogo 1">
+                <img class="stand-image" src="assets/images/jogo1.jpg" alt="Jogo 1">
                 <a href="pages/jogo-detalhe.html?game=1" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo2.jpg" alt="Jogo 2">
+                <img class="stand-image" src="assets/images/jogo2.jpg" alt="Jogo 2">
                 <a href="pages/jogo-detalhe.html?game=2" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo3.jpg" alt="Jogo 3">
+                <img class="stand-image" src="assets/images/jogo3.jpg" alt="Jogo 3">
                 <a href="pages/jogo-detalhe.html?game=1" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo4.jfif" alt="Jogo 4">
+                <img class="stand-image" src="assets/images/jogo4.jpg" alt="Jogo 4">
                 <a href="pages/jogo-detalhe.html?game=2" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo5.jpg" alt="Jogo 5">
+                <img class="stand-image" src="assets/images/jogo5.jpg" alt="Jogo 5">
                 <a href="pages/jogo-detalhe.html?game=1" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo6.jpg" alt="Jogo 6">
+                <img class="stand-image" src="assets/images/jogo6.jpg" alt="Jogo 6">
                 <a href="pages/jogo-detalhe.html?game=2" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo7.jpg" alt="Jogo 7">
+                <img class="stand-image" src="assets/images/jogo7.jpg" alt="Jogo 7">
                 <a href="pages/jogo-detalhe.html?game=1" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo8.png" alt="Jogo 8">
+                <img class="stand-image" src="assets/images/jogo8.jpg" alt="Jogo 8">
                 <a href="pages/jogo-detalhe.html?game=2" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo9.jpg" alt="Jogo 9">
+                <img class="stand-image" src="assets/images/jogo9.jpg" alt="Jogo 9">
                 <a href="pages/jogo-detalhe.html?game=1" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo10.jpg" alt="Jogo 10">
+                <img class="stand-image" src="assets/images/jogo10.jpg" alt="Jogo 10">
                 <a href="pages/jogo-detalhe.html?game=2" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo11.png" alt="Jogo 11">
+                <img class="stand-image" src="assets/images/jogo11.jpg" alt="Jogo 11">
                 <a href="pages/jogo-detalhe.html?game=1" class="btn-detalhes">Ver Detalhes</a>
             </div>
             <div class="animascroll">
-                <img class="stand-image" src="assets/images/Jogo12.jpg" alt="Jogo 12">
-                <a href="pages/jogo-detalhe.html?game=2" class="btn-detalhes espaçamento">Ver Detalhes</a>
+                <img class="stand-image" src="assets/images/jogo12.jpg" alt="Jogo 12">
+                <a href="pages/jogo-detalhe.html?game=2" class="btn-detalhes">Ver Detalhes</a>
             </div>
     </main>
 
-    <script src="js/main.js" defer></script>
+
+    <!-- Tabela de Jogos -->
+    <table class="jogos-table">
+        <thead>
+            <tr>
+                <th>Jogo</th>
+                <th>Status</th>
+                <th>Preço</th>
+                <th>Requisitos</th>
+            </tr>
+        </thead>
+        <tbody id="games-table-body">
+            <!-- Conteúdo gerado via JS -->
+        </tbody>
+    </table>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 OwlSteam. Nenhum dos direitos reservados.</p>
+            <p>Desenvolvido por Alice e Davi</p>
+        </div>
+
 </body>
-</html>
+</html> 
