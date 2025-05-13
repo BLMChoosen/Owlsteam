@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         "outer-wilds": {
             title: "Outer Wilds",
-            image: "../assets/images/Jogo4.jpg",
+            image: "../assets/images/Jogo4.jfif",
             description: "Um jogo de exploração espacial onde você investiga um sistema solar misterioso e cheio de segredos.",
             price: "R$ 64,99",
             recommendations: ["gris", "celeste"]
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         "journey": {
             title: "Journey",
-            image: "../assets/images/Jogo8.jpg",
+            image: "../assets/images/Jogo8.png",
             description: "Um jogo que se passa em um mundo desértico, onde você explora e descobre segredos enquanto interage com outros jogadores de forma única.",
             price: "R$ 14,99",
             recommendations: ["outer-wilds", "portal"]
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
             image: "../assets/images/Jogo9.jpg",
             description: "Um jogo de plataforma e aventura que conta a história de uma jovem chamada Gris, que está lidando com uma experiência dolorosa.",
             price: "R$ 50,10",
-            recommendations: ["hacker-quest", "minecraft"]
+            recommendations: ["hollow-knight", "minecraft"]
         },
         "life-is-strange": {
             title: "Life is Strange",
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const recElement = document.createElement("div");
                 recElement.classList.add("recommended-item");
                 recElement.innerHTML = `
-                    <img src="${recGame.image}" alt="${recGame.title}">
+                    <img src="${recGame.image}" alt="${recGame.title}" style="height: 120px; width: auto;">
                     <p>${recGame.title}</p>
                     <a href="jogo-detalhe.html?game=${recKey}" class="btn-detalhes">Ver Detalhes</a>
                 `;
