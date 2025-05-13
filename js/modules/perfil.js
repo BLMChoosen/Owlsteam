@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Preencher informações do usuário
     document.getElementById("user-name").innerText = user.name;
     document.getElementById("user-email").innerText = user.email;
-    document.querySelector(".profile-avatar").src = user.avatar;
 
     // Função para gerar lista de jogos
     function populateGames(containerId, games) {
