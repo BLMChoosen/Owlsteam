@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/base/site.css">
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/animations.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/modules/games.js" defer></script>
+    <script src="js/components/table.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -91,26 +94,8 @@
                 <th>Requisitos</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>Jogo 1</td>
-                <td>Pré-venda</td>
-                <td>R$59,99</td>
-                <td>Requisitos do Jogo 1</td>
-            </tr>
-            <tr>
-                <td>Jogo 2</td>
-                <td>Lançamento</td>
-                <td>R$49,99</td>
-                <td>Requisitos do Jogo 2</td>
-            </tr>
-            <tr>
-                <td>Jogo 3</td>
-                <td>Disponível</td>
-                <td>R$39,99</td>
-                <td>Requisitos do Jogo 3</td>
-            </tr>
-            <!-- Adicione mais linhas para outros jogos -->
+        <tbody id="games-table-body">
+            <!-- Conteúdo gerado via JS -->
         </tbody>
     </table>
 
